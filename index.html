@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Questionnaire</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="screen active" id="start-screen">
+      <header>
+        <h2>FOR BAALE AND DAVID #BAVID2025🥳🤗💞</h2>
+      </header>
+      <h1>Welcome👋</h1>
+      <p>Your response is very much needed for the smooth running of this wedding, this should take about three minutes 🙃</p>
+      <button id="start-btn">Start</button>
+    </div>
+
+    <div class="screen" id="question-screen">
+      <div class="question-no">
+        <p>Question <span id="current-question">1</span> of <span id="total">1</span></p>
+      </div>
+      <div class="question" id="question">
+        <p></p>
+      </div>
+      <div class="input-el">
+        <input type="text" placeholder="   Type your answer"/>
+      </div>
+      <div class="options" id="options"></div>
+
+      <div class="progress-bar">
+        <div class="progress" id="progress"></div>
+      </div>
+
+      <button class="prev-btn" id="prev-btn">Previous</button>
+      <button class="next-btn" id="next-btn">Next</button>
+    </div>
+
+    <div class="end">
+      <div class="end-message">
+        <p class="p1">Thank you for taking time to answer the questions 🙃</p>
+        <p class="p2">We look forward to seeing you at the wedding 🤗</p>
+        <p class="p3">Have a great day!!</p>
+      </div>
+      <button id="continue-btn">Continue</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

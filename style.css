@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #f5efe6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 1rem;
+  font-family: 'Times New Roman', Times, serif;
+}
+.container {
+  background-color: white;
+  border-radius: 10px;
+  padding-bottom: 15px;
+  box-shadow: 5px 0px 20px 0px rgb(42, 11, 49);
+  width: 100%;
+  max-width: 600px;
+  overflow: hidden;
+  position: relative;
+}
+.screen.active {
+  display: block;
+}
+#start-screen header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 10px;
+  color: white;
+  background-color: rgb(144, 67, 216);
+}
+#start-screen h1 {
+  text-align: center;
+}
+#start-screen p {
+  font-size: 20px;
+  padding: 15px;
+}
+#start-btn {
+  display: flex;
+  justify-self: center;
+  background-color: rgb(144, 67, 216);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 15px 30px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+#start-btn:hover {
+  background-color: rgb(175, 160, 188);
+}
+.screen {
+  display: none;
+}
+.question {
+  display: flex;
+  justify-content: center;
+  font-size: 23px;
+  color: rgb(128, 25, 159);
+  padding: 10px;
+}
+.question-no {
+  padding: 10px 20px;
+  color: rgb(128, 25, 159);
+}
+.input-el input {
+  visibility: hidden;
+  border: none;
+  border-bottom: 2px solid black;
+  border-radius: 0px;
+  outline: none;
+  padding: 8px 12px;
+  margin-left: 70px;
+  transition: border-color 0.3s ease;
+  font-size: 16px;
+}
+.input-el input:hover {
+  border-color: rgb(128, 25, 159);
+}
+.options {
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.options p {
+  background-color: rgb(128, 25, 159);
+  color: black;
+  border: 2px solid rgb(203, 147, 223);
+  border-radius: 10px;
+  padding: 1rem;
+  cursor: pointer;
+  text-align: left;
+  transition: all 0.3s ease;
+}
+.options p:hover:not(.selected) {
+  background-color: #eadbc8;
+  border-color: #dac0ae;
+}
+.options p.selected {
+  background-color: #eadbc8;
+  border-color: #dac0ae;
+  color: black;
+}
+.progress-bar {
+  height: 10px;
+  background-color: rgb(203, 147, 223);
+  border-radius: 5px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+.progress {
+  height: 100%;
+  background-color: rgb(128, 25, 159);
+  width: 0%;
+  transition: width 0.3s ease;
+}
+.screen button {
+  cursor: pointer;
+  border: none;
+  padding: 10px;
+  background-color: rgb(128, 25, 159);
+  border-radius: 5px;
+  margin: 10px 10px;
+}
+.screen button:hover {
+  background-color: rgb(175, 160, 188);
+}
+.screen .next-btn {
+  float: right;
+}
+.end {
+  display: none;
+}
+.end-message {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  padding: 20px;
+}
+.end .p1 {
+  font-size: 20px;
+}
+#continue-btn {
+  border: none;
+  padding: 10px;
+  background-color: rgb(128, 25, 159);
+  border-radius: 5px;
+  display: flex;
+  justify-self: center;
+  margin: 10px 10px;
+  cursor: pointer;
+}
+#continue-btn:hover {
+  background-color: rgb(175, 160, 188);
+}
+.selected {
+  background-color: #eadbc8 ;
+}
